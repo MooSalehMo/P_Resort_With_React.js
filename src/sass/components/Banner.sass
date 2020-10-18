@@ -1,0 +1,27 @@
+.banner
+  display: inline-block
+  color: $cfff
+  padding: 2rem 1rem
+  text-align: center
+  text-transform: capitalize
+  @include mainSpacing
+  @include bg-rgba($c000, .5)
+  @media (min-width: 992px)
+    padding: 2rem 6rem
+  @media (min-width: 576px)
+    padding: 2rem 3rem
+  h1
+    font-size: 2.5rem
+    @media (min-width: 992px)
+      font-size: 4rem
+    @media (min-width: 576px)
+      font-size: 3rem
+  div
+    width: 10rem
+    height: 5px
+    background: $primaryColor
+    margin: 1.7rem auto
+    border-radius: 2rem
+  p
+    font-size: 1.2rem
+    margin-bottom: 2rem

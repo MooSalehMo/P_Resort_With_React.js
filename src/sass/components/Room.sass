@@ -1,0 +1,48 @@
+.room
+  @include lightShadow
+  @include transition
+  &:hover
+    @include darkShadow
+  .img-container
+    position: relative
+    &:hover
+      @include bg_rgba($c000, 0.8)
+      img
+        opacity: 0.3
+      .price-top
+        opacity: 0
+      .room-link
+        transform: translate(-50%, -50%) scale(1)
+    img
+      width: 100%
+      display: block
+      @include transition
+    .price-top
+      position: absolute
+      top: 0
+      left: 0
+      color: $cfff
+      padding: 0.3rem 0.6rem 0.5rem
+      border-bottom-right-radius: 1rem
+      font-size: 0.5rem
+      text-align: center
+      @include bg_rgba($c000, 0.8)
+      @include transition
+      h6
+        margin-bottom: 0
+        font-size: 0.9rem
+        font-weight: 300
+        @include mainSpacing
+    .room-link
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: scale(0)
+      @include transition
+  .room-info
+    background: $cccc
+    text-transform: capitalize
+    padding: 0.5rem 0
+    text-align: center
+    font-weight: 700
+    @include mainSpacing

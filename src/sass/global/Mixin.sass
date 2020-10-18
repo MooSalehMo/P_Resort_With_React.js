@@ -1,0 +1,60 @@
+// start prefixer
+@mixin prefixer($property, $value, $prefixes: ())
+  @each $prefix in $prefixes
+    #{'-' + $prefix + '-' + $property}: $value
+
+    $property: $value
+// end prefixer
+
+  // start overlay
+@mixin overlay
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+// end overlay
+
+// start transition
+@mixin transition
+  -webkit-transition: all 0.3s linear
+  -moz-transition: all 0.3s linear
+  -ms-transition: all 0.3s linear
+  -o-transition: all 0.3s linear
+  transition: all 0.3s linear
+// end transition
+// start minSpcing 
+@mixin mainSpacing
+  letter-spacing: 3px
+// start minSpcing 
+
+// start background_size
+@mixin bg_size
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -ms-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+// end background_size
+
+// start backgroundcolor rgba 
+@mixin bg_rgba($v, $vv)
+  background-color: rgba($v , $vv)
+// end backgroundcolor rgba 
+
+// Start shadow 
+@mixin  lightShadow
+  -webkit-box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5)
+  -moz-box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5)
+  -ms-box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5)
+  -o-box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5)
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5)
+@mixin darkShadow
+  -webkit-box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5)
+  -moz-box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5)
+  -ms-box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5)
+  -o-box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5)
+  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5)
+// End shadow 

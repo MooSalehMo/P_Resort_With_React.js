@@ -1,0 +1,49 @@
+.navbar
+  background-color: $ceee
+  color: $cfff
+  position: relative
+  top: 0
+  left: 0
+  width: 100%
+  padding: 0.75rem 2rem
+  z-index: 1
+  .nav-center
+    @media (min-width: 768px )
+      display: flex
+      align-items: center
+      justify-content: space-between
+      max-width: 1170px
+      margin: 0 auto
+    .nav-header
+      display: flex
+      justify-content: space-between
+      .nav-btn
+        background: transparent
+        @media ( min-width: 767px )
+          display: none
+        .nav-icon
+          font-size: 1.5rem
+          color: $primaryColor
+    .nav-links
+      text-align: center
+      margin: 0
+      @include transition
+      @media screen and ( max-width: 767px  )
+        height: 0
+        overflow: hidden
+        list-style-type: none
+        text-align: center
+    .nav-links> li,  .nav-links-show-nav> li
+      text-align: center
+      @include transition
+      @media ( min-width:  768px)
+        display: inline-block
+        overflow: hidden
+    .nav-links> li> a,  .nav-links-show-nav> li> a
+      display: inline-block
+      padding: .5rem
+      font-size: 1.2rem
+      color: $c555
+      font-weight: bold
+      &.active
+        color: $primaryColor

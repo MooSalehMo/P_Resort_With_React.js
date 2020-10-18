@@ -1,0 +1,101 @@
+//============================= Start Rest Element
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+h1
+  font-size: 3em
+  line-height: 1
+  margin-bottom: 0.5em
+h2
+  font-size: 2em
+  margin-bottom: 0.75em
+h3
+  font-size: 1.5em
+  line-height: 1
+  margin-bottom: 1em
+h4
+  font-size: 1.2em
+  line-height: 1.25
+  margin-bottom: 1.25em
+h5
+  font-size: 1em
+  font-weight: bold
+  margin-bottom: 1.5em
+h6
+  font-size: 1em
+  font-weight: bold
+  margin-bottom: 1.5em
+a, a:hover
+  text-decoration: none !important
+ul
+  list-style-type: none
+  margin: 0
+input, button , textarea
+  outline: transparent !important
+  border: 0
+button:hover
+  cursor: pointer
+//============================= End Rest Element
+
+//======================== Start class primary
+.btn-primary
+  display: inline-block
+  text-decoration: none
+  background: $primaryColor
+  color: $c000
+  padding: 0.4rem 0.9rem
+  border: 3px solid $primaryColor
+  text-transform: uppercase
+  cursor: pointer
+  @include transition
+  @include mainSpacing
+  &:hover
+    background: transparent
+    color: $primaryColor
+//======================= End class primary
+
+//======================= Start class section title
+.section-title
+  text-align: center
+  margin-bottom: 4rem
+  h4
+    font-size: 2rem
+    text-transform: capitalize
+    margin-bottom: 1rem
+    @include mainSpacing
+  div
+    width: 5rem
+    height: 5px
+    border-radius: 2rem
+    margin: 0 auto
+    background: $primaryColor
+//======================= End class section title
+
+//======================= Start loading
+.loading
+  text-transform: capitalize
+  text-align: center
+  margin-top: 3rem
+//======================= End loading
+
+//======================= Start Error
+.error
+  text-align: center
+  text-transform: uppercase
+  margin: 2rem 0
+//======================= End Error
+
+//======================= Start Search-empty
+.empty-search
+  text-align: center
+  text-transform: capitalize
+  margin: 2rem 0
+  padding: 1rem
+  @include mainSpacing
+//======================= End Search-empty
+
+//======================= Start transition
+%transition
+  transition: all 0.3s linear
+//======================= End transition

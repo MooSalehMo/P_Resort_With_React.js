@@ -1,0 +1,37 @@
+.filter-container
+  padding: 5rem 0
+  .filter-form
+    width: 60vw
+    margin: 0 auto
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(202px, 1fr))
+    grid-row-gap: 2rem
+    grid-column-gap: 40px
+    @media (min-width: 992px)
+      width: 95vw
+      max-width: 1170px
+    @media (min-width: 776px)
+      width: 70vw
+    .form-group
+      text-transform: capitalize
+      label
+        display: block
+        margin-bottom: 0.5rem
+        @include mainSpacing
+      .form-control
+        width: 100%
+        background: transparent
+        font-size: 1rem
+      .size-inputs
+        display: flex
+      .size-input
+        width: 40%
+        padding: 0.2rem
+        border: 1px solid $c000
+        border-radius: 0.3rem
+        margin-right: 0.3rem
+      .single-extra
+        label
+          display: inline-block !important
+          font-size: 0.8rem
+          margin-left: 0.5rem
